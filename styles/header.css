@@ -10,6 +10,9 @@
   min-height: 114px;
   align-items: center;
 }
+.header__logo.hiden {
+  display: none;
+}
 .header__menu {
   flex: 1 1 auto;
 }
@@ -158,5 +161,13 @@
   }
   .header:target .close-icon-menu {
     display: flex;
+  }
+}
+@media (max-width: 380px) {
+  .header__logo.hiden {
+    display: block;
+  }
+  .header__logo {
+    display: none;
   }
 }

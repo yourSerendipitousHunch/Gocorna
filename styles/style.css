@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:regular,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Raleway:700,800&display=swap);
 @import url(header.css);
+@import url(get-started.css);
 
 body {
   font-family: Rubik;
@@ -15,6 +16,30 @@ body {
   max-width: 1087px;
   margin: auto;
   padding: 0px 15px;
+}
+
+/* BLOCK */
+
+.block-text__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 126%;
+  color: #000;
+}
+.block-text__title:not(:last-child) {
+  margin-bottom: 12px;
+}
+.block-text__title span{
+  color: #EC5863;
+}
+.block-text__title_blue span{
+  color: #4285F4;
+}
+.block-text__text {
+  line-height: 138.5%;
+}
+.block-text__text:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 /* PC */
@@ -38,5 +63,8 @@ body {
 @media (max-width: 767px) {
   [class*='__container']{
     max-width: none;
+  }
+  .block-text__title {
+    font-size: 34px;
   }
 }
