@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:700,800&display=swap);
 @import url(header.css);
 @import url(get-started.css);
+@import url(stay-safe.css);
 
 body {
   font-family: Rubik;
@@ -16,6 +17,32 @@ body {
   max-width: 1087px;
   margin: auto;
   padding: 0px 15px;
+}
+
+/* BUTTON */
+
+.button {
+  display: inline-block;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  color: #FCFDFE;
+  padding: 14px 30px;
+  border-radius: 5px;
+  background-color: #EC5863;
+  transition: background-color 0.3s;
+  text-transform: uppercase; 
+}
+.button:hover {
+  background-color: #ec727a; 
+}
+.button_blue {
+  background-color: #4285F4;
+}
+.button_blue:hover {
+  background-color: #5c94ee;
 }
 
 /* BLOCK */
