@@ -1,6 +1,7 @@
 @import url(reset.css);
 @import url(https://fonts.googleapis.com/css?family=Rubik:regular,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Raleway:700,800&display=swap);
+@import url(header.css);
 
 body {
   font-family: Rubik;
@@ -9,10 +10,33 @@ body {
 }
 .wrapper {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 [class*='__container']{
-  max-width: 1057px;
+  max-width: 1087px;
   margin: auto;
-} 
+  padding: 0px 15px;
+}
+
+/* PC */
+
+@media (max-width: 1087px) {
+  [class*='__container']{
+    max-width: 970px;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  [class*='__container']{
+    max-width: 750px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  [class*='__container']{
+    max-width: none;
+  }
+}
